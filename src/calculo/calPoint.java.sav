@@ -1,0 +1,111 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package calculo;
+
+import dxf.point;
+
+/**
+ *
+ * @author ricuesta
+ */
+public class calPoint {
+
+    public calPoint() {
+    }
+
+    public point point1(double dtd, double Yo, double angulo) {
+        if (angulo != 0) {
+            double r=Math.sqrt(Math.pow(dtd, 2)+Math.pow(Yo, 2));
+            return new point(r * Math.cos(angulo), r * Math.sin(angulo));
+        }
+        return new point(dtd, Yo);
+    }
+
+    public point point2(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(Yo * 0.75 * Math.cos(angulo), Yo * 0.75 * Math.sin(angulo));
+        }
+        return new point(Yo * 0.75, Yo * 0.75);
+    }
+
+    public point point3(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(Yo * 0.6439 / 2 * Math.cos(angulo), Yo * 0.6439 * Math.sin(angulo));
+        }
+        return new point(Yo * 0.6439 / 2, Yo * 0.6439);
+    }
+
+    public point point4(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(0, Yo / 2 * Math.sin(angulo));
+        }
+        return new point(0, Yo / 2);
+    }
+
+    public point point5(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(-1 * Yo / 4 * Math.cos(angulo), Yo / 4 * Math.sin(angulo));
+        }
+        return new point(-1 * Yo / 4, Yo / 4);
+    }
+
+    public point point6(double Xo, double angulo) {
+        if (angulo != 0) {
+            return new point(Xo * 0.926 * Math.cos(angulo), -1 * Xo * 0.926 / 2 * Math.sin(angulo));
+        }
+        return new point(Xo * 0.926, -1 * Xo * 0.926 / 2);
+    }
+
+    public point point7(double Xo, double angulo) {
+        if (angulo != 0) {
+            return new point(Xo * Math.cos(angulo), 0);
+        }
+        return new point(Xo, 0);
+    }
+
+    public point point8(double Xo, double angulo) {
+        if (angulo != 0) {
+            return new point(Xo * 0.926 * Math.cos(angulo), Xo * 0.926 / 2 * Math.sin(angulo));
+        }
+        return new point(Xo * 0.926, Xo * 0.926 / 2);
+    }
+
+    public point point9(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(-1 * Yo / 4 * Math.cos(angulo), -1 * Yo / 4 * Math.sin(angulo));
+        }
+        return new point(-1 * Yo / 4, -1 * Yo / 4);
+    }
+
+    public point point10(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(0, -1 * Yo / 2 * Math.sin(angulo));
+        }
+        return new point(0, -1 * Yo / 2);
+    }
+
+    public point point11(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(Yo * 0.6439 / 2 * Math.cos(angulo), -1 * Yo * 0.6439 * Math.sin(angulo));
+        }
+        return new point(Yo * 0.6439 / 2, -1 * Yo * 0.6439);
+    }
+
+    public point point12(double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(Yo * 0.75 * Math.cos(angulo), -1 * Yo * 0.75 * Math.sin(angulo));
+        }
+        return new point(Yo * 0.75, -1 * Yo * 0.75);
+    }
+
+    public point point13(double dtd, double Yo, double angulo) {
+        if (angulo != 0) {
+            return new point(dtd * Math.cos(angulo), -1 * Yo * Math.sin(angulo));
+        }
+        return new point(dtd, -1 * Yo);
+    }
+
+}

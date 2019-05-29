@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports 
+              http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" 
+              name="pozo" pageWidth="612" pageHeight="792" 
+              columnWidth="572" leftMargin="20" 
+              rightMargin="20" topMargin="20" 
+              bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="308"/>
+	<parameter name="Pozo" class="java.lang.String"/>
+	<parameter name="Cuenca" class="java.lang.String"/>
+	<parameter name="Norte" class="java.lang.String"/>
+	<parameter name="Este" class="java.lang.String"/>
+	<parameter name="KD" class="java.lang.String"/>
+	<parameter name="Ho" class="java.lang.String"/>
+	<parameter name="Gn" class="java.lang.String"/>
+	<parameter name="E" class="java.lang.String"/>
+	<parameter name="Rdo" class="java.lang.String"/>
+	<parameter name="Q" class="java.lang.String"/>
+	<parameter name="Rp" class="java.lang.String"/>
+	<parameter name="Tb" class="java.lang.String"/>
+	<parameter name="Ne" class="java.lang.String"/>
+	<parameter name="Nd" class="java.lang.String"/>
+	<parameter name="Pto" class="java.lang.String"/>
+	<parameter name="S" class="java.lang.String"/>
+	<parameter name="Va" class="java.lang.String"/>
+	<parameter name="Tv" class="java.lang.String"/>
+	<parameter name="a" class="java.lang.String"/>
+	<parameter name="l" class="java.lang.String"/>
+	<parameter name="Area" class="java.lang.String"/>
+	<parameter name="Ro" class="java.lang.String"/>
+	<parameter name="Dtd" class="java.lang.String"/>
+	<parameter name="Xo" class="java.lang.String"/>
+	<parameter name="Yo" class="java.lang.String"/>
+	<parameter name="Fseg" class="java.lang.String"/>
+	<parameter name="Ep" class="java.lang.String"/>
+	<parameter name="i" class="java.lang.String"/>
+	<parameter name="X1" class="java.lang.String"/>
+	<parameter name="X2" class="java.lang.String"/>
+	<parameter name="X3" class="java.lang.String"/>
+	<parameter name="X4" class="java.lang.String"/>
+	<parameter name="X5" class="java.lang.String"/>
+	<parameter name="X6" class="java.lang.String"/>
+	<parameter name="X7" class="java.lang.String"/>
+	<parameter name="X8" class="java.lang.String"/>
+	<parameter name="X9" class="java.lang.String"/>
+	<parameter name="X10" class="java.lang.String"/>
+	<parameter name="X11" class="java.lang.String"/>
+	<parameter name="X12" class="java.lang.String"/>
+	<parameter name="X13" class="java.lang.String"/>
+	<parameter name="X14" class="java.lang.String"/>
+	<parameter name="Y1" class="java.lang.String"/>
+	<parameter name="Y2" class="java.lang.String"/>
+	<parameter name="Y3" class="java.lang.String"/>
+	<parameter name="Y4" class="java.lang.String"/>
+	<parameter name="Y5" class="java.lang.String"/>
+	<parameter name="Y6" class="java.lang.String"/>
+	<parameter name="Y7" class="java.lang.String"/>
+	<parameter name="Y8" class="java.lang.String"/>
+	<parameter name="Y9" class="java.lang.String"/>
+	<parameter name="Y10" class="java.lang.String"/>
+	<parameter name="Y11" class="java.lang.String"/>
+	<parameter name="Y12" class="java.lang.String"/>
+	<parameter name="Y13" class="java.lang.String"/>
+	<parameter name="Y14" class="java.lang.String"/>
+	<parameter name="X1m" class="java.lang.String"/>
+	<parameter name="X2m" class="java.lang.String"/>
+	<parameter name="X3m" class="java.lang.String"/>
+	<parameter name="X4m" class="java.lang.String"/>
+	<parameter name="X5m" class="java.lang.String"/>
+	<parameter name="X6m" class="java.lang.String"/>
+	<parameter name="X7m" class="java.lang.String"/>
+	<parameter name="X8m" class="java.lang.String"/>
+	<parameter name="X9m" class="java.lang.String"/>
+	<parameter name="X10m" class="java.lang.String"/>
+	<parameter name="X11m" class="java.lang.String"/>
+	<parameter name="X12m" class="java.lang.String"/>
+	<parameter name="X13m" class="java.lang.String"/>
+	<parameter name="X14m" class="java.lang.String"/>
+	<parameter name="Y1m" class="java.lang.String"/>
+	<parameter name="Y2m" class="java.lang.String"/>
+	<parameter name="Y3m" class="java.lang.String"/>
+	<parameter name="Y4m" class="java.lang.String"/>
+	<parameter name="Y5m" class="java.lang.String"/>
+	<parameter name="Y6m" class="java.lang.String"/>
+	<parameter name="Y7m" class="java.lang.String"/>
+	<parameter name="Y8m" class="java.lang.String"/>
+	<parameter name="Y9m" class="java.lang.String"/>
+	<parameter name="Y10m" class="java.lang.String"/>
+	<parameter name="Y11m" class="java.lang.String"/>
+	<parameter name="Y12m" class="java.lang.String"/>
+	<parameter name="Y13m" class="java.lang.String"/>
+	<parameter name="Y14m" class="java.lang.String"/>
+	<parameter name="X1km" class="java.lang.String"/>
+	<parameter name="X2km" class="java.lang.String"/>
+	<parameter name="X3km" class="java.lang.String"/>
+	<parameter name="X4km" class="java.lang.String"/>
+	<parameter name="X5km" class="java.lang.String"/>
+	<parameter name="X6km" class="java.lang.String"/>
+	<parameter name="X7km" class="java.lang.String"/>
+	<parameter name="X8km" class="java.lang.String"/>
+	<parameter name="X9km" class="java.lang.String"/>
+	<parameter name="X10km" class="java.lang.String"/>
+	<parameter name="X11km" class="java.lang.String"/>
+	<parameter name="X12km" class="java.lang.String"/>
+	<parameter name="X13km" class="java.lang.String"/>
+	<parameter name="X14km" class="java.lang.String"/>
+	<parameter name="Y1km" class="java.lang.String"/>
+	<parameter name="Y2km" class="java.lang.String"/>
+	<parameter name="Y3km" class="java.lang.String"/>
+	<parameter name="Y4km" class="java.lang.String"/>
+	<parameter name="Y5km" class="java.lang.String"/>
+	<parameter name="Y6km" class="java.lang.String"/>
+	<parameter name="Y7km" class="java.lang.String"/>
+	<parameter name="Y8km" class="java.lang.String"/>
+	<parameter name="Y9km" class="java.lang.String"/>
+	<parameter name="Y10km" class="java.lang.String"/>
+	<parameter name="Y11km" class="java.lang.String"/>
+	<parameter name="Y12km" class="java.lang.String"/>
+	<parameter name="Y13km" class="java.lang.String"/>
+	<parameter name="Y14km" class="java.lang.String"/>
+	<parameter name="X1kmf" class="java.lang.String"/>
+	<parameter name="X2kmf" class="java.lang.String"/>
+	<parameter name="X3kmf" class="java.lang.String"/>
+	<parameter name="X4kmf" class="java.lang.String"/>
+	<parameter name="X5kmf" class="java.lang.String"/>
+	<parameter name="X6kmf" class="java.lang.String"/>
+	<parameter name="X7kmf" class="java.lang.String"/>
+	<parameter name="X8kmf" class="java.lang.String"/>
+	<parameter name="X9kmf" class="java.lang.String"/>
+	<parameter name="X10kmf" class="java.lang.String"/>
+	<parameter name="X11kmf" class="java.lang.String"/>
+	<parameter name="X12kmf" class="java.lang.String"/>
+	<parameter name="X13kmf" class="java.lang.String"/>
+	<parameter name="X14kmf" class="java.lang.String"/>
+	<parameter name="Y1kmf" class="java.lang.String"/>
+	<parameter name="Y2kmf" class="java.lang.String"/>
+	<parameter name="Y3kmf" class="java.lang.String"/>
+	<parameter name="Y4kmf" class="java.lang.String"/>
+	<parameter name="Y5kmf" class="java.lang.String"/>
+	<parameter name="Y6kmf" class="java.lang.String"/>
+	<parameter name="Y7kmf" class="java.lang.String"/>
+	<parameter name="Y8kmf" class="java.lang.String"/>
+	<parameter name="Y9kmf" class="java.lang.String"/>
+	<parameter name="Y10kmf" class="java.lang.String"/>
+	<parameter name="Y11kmf" class="java.lang.String"/>
+	<parameter name="Y12kmf" class="java.lang.String"/>
+	<parameter name="Y13kmf" class="java.lang.String"/>
+	<parameter name="Y14kmf" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="752" splitType="Stretch">
+			<staticText>
+				<reportElement x="55" y="18" width="473" height="39"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Características de la Zona de Protección Sanitaria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="77" width="137" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ubicación de la fuente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="97" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Siglas del Pozo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="117" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Cuenca Hidrogeológica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="137" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[Pozo en]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="137" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[Norte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="137" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Este]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="157" width="34" height="20"/>
+				<textElement/>
+				<text><![CDATA[Uso]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="77" width="148" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Características de la Fuente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="97" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Caudal [Q]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="117" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Radio [Rp]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="137" width="123" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tiempo de bombeo [Tb]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="157" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nivel Estático [Ne]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="177" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nivel Dinámico [Nd]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="197" width="122" height="20"/>
+				<textElement/>
+				<text><![CDATA[Profundidad Total [Pto]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="217" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Abatimiento [S]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="247" width="171" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Características del Contaminante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="267" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Velocidad inducidad [Va]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="287" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tiempo de Vida [Tv]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="328" width="114" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resultados Finales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="354" width="138" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dimensiones de la Zona I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="377" width="79" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lado menor [a]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="377" width="86" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lado mayor [l]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="377" width="65" height="20"/>
+				<textElement/>
+				<text><![CDATA[Area [Atl]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="413" width="133" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dimensiones de la Zona II]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="182" width="144" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Características del Acuífero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="205" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Permeabilidad [KD]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="225" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Espesor inicial [Ho]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="245" width="130" height="20"/>
+				<textElement/>
+				<text><![CDATA[Gradiente natural [Gn]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="265" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Almacenamiento [E]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="285" width="131" height="20"/>
+				<textElement/>
+				<text><![CDATA[Dirección del flujo [Rdo]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="439" width="126" height="20"/>
+				<textElement/>
+				<text><![CDATA[Radio de influencia [Ro]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="462" width="134" height="20"/>
+				<textElement/>
+				<text><![CDATA[Distancia aguas arriba [Dtd]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="485" width="138" height="20"/>
+				<textElement/>
+				<text><![CDATA[Distancia aguas abajo [Xo]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="507" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Asintotas [Yo]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="485" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Gradiente  Crítico [i]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="462" width="153" height="20"/>
+				<textElement/>
+				<text><![CDATA[Error de cálculo permitido [Ep]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="439" width="138" height="20"/>
+				<textElement/>
+				<text><![CDATA[Factor de seguridad [Fseg]]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="155" y="97" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Pozo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="117" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Cuenca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="157" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Norte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="157" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Este}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="205" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{KD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="225" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Ho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="245" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Gn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="265" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{E}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="285" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Rdo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="97" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Q}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="117" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Rp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="137" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Tb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="157" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Ne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="177" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Nd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="197" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Pto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="217" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{S}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="267" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Va}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="287" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Tv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="377" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{a}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="377" width="62" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{l}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="377" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Area}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="439" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Ro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="462" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Dtd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="485" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Xo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="507" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Yo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="439" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Fseg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="462" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="485" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{i}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="638" width="100" height="1"/>
+			</break>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="44" y="37" width="473" height="39"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Características de la Zona de Protección Sanitaria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="174" width="254" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Puntos notable en la parábola en metros [m]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="309" y="174" width="61" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X * Fseg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="174" width="57" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Y * Fseg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="209" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="229" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="249" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="269" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="289" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="309" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="329" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="349" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="369" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="389" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="409" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="429" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="449" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="469" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="209" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="229" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="249" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="269" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="289" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="309" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="329" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="349" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="369" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="389" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="409" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="429" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="449" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="469" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="209" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="229" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="249" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="269" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="289" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="309" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="329" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="349" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="369" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="389" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="409" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="429" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="449" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="469" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="209" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="229" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="249" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="269" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="289" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="309" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="329" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="349" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="369" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="389" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="409" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="429" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="449" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="469" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[14]=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="209" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="229" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="249" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="269" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="289" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="309" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="329" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="349" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="369" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="389" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="409" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="429" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="449" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="469" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="209" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="229" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="249" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="269" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="289" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="309" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="329" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="349" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="369" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="389" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="409" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="429" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="449" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="191" y="469" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="209" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X1m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="229" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X2m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="249" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X3m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="269" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X4m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="289" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X5m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="309" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X6m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="329" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X7m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="349" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X8m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="369" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X9m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="389" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X10m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="409" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X11m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="429" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X12m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="449" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X13m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="469" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X14m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="209" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y1m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="229" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y2m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="249" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y3m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="269" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y4m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="289" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y5m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="309" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y6m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="329" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y7m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="349" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y8m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="369" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y9m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="389" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y10m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="409" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y11m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="429" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y12m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="449" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y13m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="469" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y14m}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="91" width="137" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ubicación de la fuente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="111" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Siglas del Pozo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="131" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Cuenca Hidrogeológica]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="169" y="111" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Pozo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="131" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Cuenca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="307" y="111" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[Pozo en]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="111" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[Norte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="111" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Este]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="131" width="34" height="20"/>
+				<textElement/>
+				<text><![CDATA[Uso]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="131" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Este}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="131" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Norte}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="680" width="100" height="1"/>
+			</break>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="62" y="25" width="473" height="39"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Características de la Zona de Protección Sanitaria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="171" width="278" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Puntos notable en la parábola en kilómetro [Km]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="325" y="171" width="61" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X * Fseg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="171" width="57" height="20"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Y * Fseg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="205" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="225" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="245" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="265" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="285" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="305" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="325" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="345" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="365" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="385" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="405" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="425" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="445" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="465" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="205" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="225" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="245" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="265" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="285" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="305" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="325" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="345" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="365" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="385" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="405" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="425" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="445" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="465" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="205" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="225" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="245" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="265" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="285" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="305" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="325" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="345" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="365" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="385" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="405" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="425" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="445" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="465" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[X[14]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="205" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[1]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="225" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[2]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="245" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[3]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="265" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[4]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="285" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[5]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="305" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[6]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="325" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[7]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="345" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[8]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="365" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[9]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="385" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[10]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="405" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[11]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="425" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[12]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="445" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[13]=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="465" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Y[14]=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="205" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X1km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="225" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X2km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="245" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X3km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="265" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X4km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="285" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X5km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="305" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X6km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="325" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X7km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="345" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X8km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="365" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X9km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="385" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X10km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="405" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X11km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="425" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X12km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="445" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X13km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="465" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X14km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="205" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y1km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="225" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y2km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="245" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y3km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="265" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y4km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="285" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y5km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="305" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y6km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="325" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y7km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="345" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y8km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="365" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y9km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="385" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y10km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="405" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y11km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="425" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y12km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="445" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y13km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="465" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y14km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="205" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X1kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="225" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X2kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="245" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X3kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="265" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X4kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="285" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X5kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="305" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X6kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="325" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X7kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="345" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X8kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="365" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X9kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="385" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X10kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="405" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X11kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="425" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X12kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="445" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X13kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="465" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{X14kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="205" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y1kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="225" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y2kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="245" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y3kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="265" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y4kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="285" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y5kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="305" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y6kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="325" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y7kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="345" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y8kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="365" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y9kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="385" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y10kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="405" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y11kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="425" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y12kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="445" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y13kmf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="465" width="64" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Y14kmf}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="37" y="83" width="137" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ubicación de la fuente]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="183" y="103" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Pozo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="123" width="106" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Cuenca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="401" y="103" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[Norte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="123" width="34" height="20"/>
+				<textElement/>
+				<text><![CDATA[Uso]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="484" y="103" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[Este]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="484" y="123" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Este}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="123" width="54" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{Norte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="321" y="103" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[Pozo en]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="123" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Cuenca Hidrogeológica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="103" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Siglas del Pozo]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="614" width="100" height="1"/>
+			</break>
+		</band>
+	</detail>
+</jasperReport>

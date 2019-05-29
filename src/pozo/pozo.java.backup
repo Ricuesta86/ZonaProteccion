@@ -1,0 +1,150 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pozo;
+
+import dxf.point;
+
+/**
+ *
+ * @author ricuesta
+ */
+public class pozo {
+
+//    Ubicación de la fuente 
+//      -Siglas del Pozo 
+    private String siglaPozo;
+//      -Cuenca Hidrogelógia 
+    private String cuencaH;
+//      -Punto del Pozo 
+    private point uPozo;
+//      -Punto de la Reserva 
+    private point uReserva;
+
+    /**
+     * Caracteristicas de la Fuente
+     */
+//    -Caudal[Q] 
+    private double Q;
+//    -Radio[Rp] 
+    private double Rp;
+//    -Tiempo de Bombeo[Tb]
+    private double Tb;
+//    -abatimiento[S]
+    private double S;
+
+    /**
+     * Caracteristicas del Acuifero
+     */
+//    -Permeabilidad[KD] 
+    private double KD;
+//    -Espesor inicial[Ho]
+    private double Ho;
+//    -Gradiente natural[Gn]
+    private double Gn;
+//    -Almacenamiento[E] 
+    private double E;
+//    -Dirección del flujo[Rbo]
+    private double Rbo;
+    /**
+     * Caracteristicas del Contaminante
+     */
+//    -Velocidad inducida[VA]
+    private double VA;
+//    -Tiempo de Vida[Tv o TD]
+    private double Tv;
+
+    public pozo(String siglaPozo, String cuencaH, point uPozo, point uReserva, double Q, double Rp, double Tb, double S, double KD, double Ho, double Gn, double E, double Rbo, double VA, double Tv) {
+        this.siglaPozo = siglaPozo;
+        this.cuencaH = cuencaH;
+        this.uPozo = uPozo;
+        this.uReserva = uReserva;
+        this.Q = Q;
+        this.Rp = Rp;
+        this.Tb = Tb;
+        this.S = S;
+        this.KD = KD;
+        this.Ho = Ho;
+        this.Gn = Gn;
+        this.E = E;
+        this.Rbo = Rbo;
+        this.VA = VA;
+        this.Tv = Tv;
+    }
+
+    public double getVA() {
+        return VA;
+    }
+
+    public double getTv() {
+        return Tv;
+    }
+
+    /**
+     * Caso A
+     */
+    /**
+     * La distancia de protección sanitaria (DPS). Se calcula multiplica la
+     * Velocidad de circulación de las aguas subterráneas en las inmediaciones
+     * del pozo (m/s) por Tiempos de supervivencia de la bateria (d).
+     *
+     * DPS=VA*TD
+     *
+     */
+    public double DPS() {
+        return VA * Tv;
+    }
+
+    /**
+     * La asíntotas o bordes de la region productiva en sentido perpendiculas al
+     * flujo (Y). Se calcula dividiendo a Caudal de extracción de la fuente (Q)
+     * entre, la multiplicación de dos veces Conductividad hidráulica de Darcy
+     * (KD), por Espesor del acuifero(H0), por Gradiente natural del flujo
+     * subterráneo (IN).
+     */
+    public double Y() {
+        return Q / (2 * KD * Ho * Gn);
+    }
+
+    /**
+     * El punto de estancamiento (X0). Se calcula multiplicando menos 1, por la
+     * divición de la Caudal de extracción de la fuente (Q) entre, la
+     * multiplicación de dos veces PI por, Conductividad hidráulica de Darcy
+     * (KD), por Espesor del acuifero(H0), por Gradiente natural del flujo
+     * subterráneo (IN).
+     */
+    public double Xo() {
+        return -1 * (Q / (2 * 3.14f * KD * Ho * Gn));
+    }
+
+    /**
+     * Caso B
+     */
+    /**
+     * Calculo del radio de influencia.
+     *
+     */
+    public double Ro() {
+        return 1.5 * Math.sqrt((KD * Ho * Tb) / E);
+    }
+
+    /**
+     * Falta el cálculo de la gradiente crítico(I)
+     */
+    
+    
+    /**
+     * Cálculo de (dtd) aguas arriba del pozo     * 
+     */
+    
+    /**
+     * Cálculo de la velocidad del flujo
+     */
+    public double calVA(double H, double Hp, double r){
+        return (KD/E)*((H-Hp)/r);
+    }
+    
+    
+}
